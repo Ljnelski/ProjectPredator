@@ -1,0 +1,1067 @@
+fileFormatVersion: 2
+guid: 614832a3b9b801c498c29a58b0f0dd41
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: UpperArmFL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 83
+      width: 18
+      height: 42
+    spriteID: 9a3520bd8309f304ba704e5e9fa56f4e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -49, y: 21}
+  - name: LowerArmFL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 183
+      width: 12
+      height: 46
+    spriteID: 1ed9e0391aaac82438e63a7f657d0460
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: 159}
+  - name: FootFL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 4
+      width: 12
+      height: 5
+    spriteID: ef45c0309d5125a4b841de383e5c6348
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 111, y: -17}
+  - name: ToeFL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 237
+      width: 14
+      height: 5
+    spriteID: 07376853f03d01c4db3801bc337cac18
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -35, y: 216}
+  - name: DewFootFL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 59
+      width: 19
+      height: 5
+    spriteID: b733ef5460088f5408b4e3cf2ef6cfba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 71, y: 38}
+  - name: DewToeFL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 216
+      y: 17
+      width: 10
+      height: 4
+    spriteID: 7aa310148cbb2504592a5c09b7426911
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 120, y: -4}
+  - name: LeftCalf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 83
+      width: 17
+      height: 58
+    spriteID: 449d14484eee4f24e8f23b14a91497b4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -121, y: 29}
+  - name: LeftShin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 235
+      y: 34
+      width: 11
+      height: 38
+    spriteID: 276d3c45a8a9a754da7d42ada52f964b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 107, y: -6}
+  - name: FootBL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 4
+      width: 11
+      height: 5
+    spriteID: fbdb03c759582fd43bc14f6e50efadbd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 104, y: -33}
+  - name: ToeBL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 4
+      width: 13
+      height: 5
+    spriteID: 614136a66eff0974085245f3935a3eaa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 32, y: -33}
+  - name: DewFootBL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 17
+      width: 9
+      height: 5
+    spriteID: 6d381e192dbf2714d91e253770ca7703
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 49, y: -20}
+  - name: DewToeBL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 120
+      width: 9
+      height: 4
+    spriteID: 2fc3b16a88bc700499f3269362fa490c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -85, y: 83}
+  - name: Jaw
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 34
+      width: 44
+      height: 17
+    spriteID: 484c5b5cf209c824ca32a4c2e290dc8f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 156, y: -52}
+  - name: Head
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 34
+      width: 48
+      height: 29
+    spriteID: 6af70041daad6264e937614c6fbb4e4d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 53, y: -54}
+  - name: Neck
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 83
+      width: 20
+      height: 29
+    spriteID: 1b68597b80ae5114bbc65dbf3a263b56
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5, y: -3}
+  - name: Chest
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 43
+      height: 41
+    spriteID: 405834fa750893346a0ec118cd8ad76d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -64, y: -42}
+  - name: Torso
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 34
+      width: 39
+      height: 30
+    spriteID: a1718ac4fce6e3643a6cdcda098e1174
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1, y: -53}
+  - name: Tail1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 132
+      height: 22
+    spriteID: 15ae87fc8143e5c4b90ddd5610b368e6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -144, y: -90}
+  - name: UpperArmFR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 133
+      width: 18
+      height: 42
+    spriteID: adfd621ae9929b84f9623c58d927ecf5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -44, y: 71}
+  - name: LowerArmFR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 149
+      width: 12
+      height: 46
+    spriteID: 2688ed70507c0b54194a913d1287cd60
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -72, y: 125}
+  - name: FootFR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 4
+      width: 12
+      height: 5
+    spriteID: 721542b7be36621429be590a90c20e6f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 136, y: -17}
+  - name: ToeFR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 59
+      width: 14
+      height: 5
+    spriteID: d1a4a6e3ed1a2084dba3fd8dc86d57cb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 126, y: 38}
+  - name: DewFootFR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 17
+      width: 11
+      height: 5
+    spriteID: 5e8d369baa601e54b86f81a0ba8409e6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 62, y: -4}
+  - name: DewToeFR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 17
+      width: 10
+      height: 4
+    spriteID: b502cc5a6cf4d254db223910b53fd5c5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 143, y: -4}
+  - name: RightCalf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 34
+      width: 17
+      height: 39
+    spriteID: 4ef3d16e89fe36b46a6c99b31f3503b4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 90, y: -39}
+  - name: RightShin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 203
+      width: 11
+      height: 38
+    spriteID: 471469396e8d0774eba3f5162d5c6efa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -119, y: 163}
+  - name: FootBR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 17
+      width: 11
+      height: 5
+    spriteID: b25e3c46196926c479973b351d936532
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 46, y: -20}
+  - name: ToeBR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 4
+      width: 13
+      height: 5
+    spriteID: 41d2e3afbac935d48ab545ab3ca5ec08
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 58, y: -33}
+  - name: DewFootBR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 17
+      width: 9
+      height: 5
+    spriteID: 0c252f1e74e873c488dda1283d68b3a7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 71, y: -20}
+  - name: DewToeBR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 71
+      width: 37
+      height: 4
+    spriteID: 8bbf49442480db14e8b01a02199697d3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: 34}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 256
+  documentSize: {x: 320, y: 128}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 256
+  textureActualHeight: 256
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: LeftArm
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+  - name: UpperArmFL
+    spriteName: UpperArmFL
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9a3520bd8309f304ba704e5e9fa56f4e
+    layerID: -2028943594
+    mosaicPosition: {x: 29, y: 83}
+  - name: LowerArmFL
+    spriteName: LowerArmFL
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1ed9e0391aaac82438e63a7f657d0460
+    layerID: 555689827
+    mosaicPosition: {x: 29, y: 183}
+  - name: FootFL
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 
+    layerID: 1374897636
+    mosaicPosition: {x: 0, y: 0}
+  - name: FootFL
+    spriteName: FootFL
+    isGroup: 0
+    parentIndex: 3
+    spriteID: ef45c0309d5125a4b841de383e5c6348
+    layerID: 1830447908
+    mosaicPosition: {x: 186, y: 4}
+  - name: ToeFL
+    spriteName: ToeFL
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 07376853f03d01c4db3801bc337cac18
+    layerID: -1671483468
+    mosaicPosition: {x: 29, y: 237}
+  - name: DewFootFL
+    spriteName: DewFootFL
+    isGroup: 0
+    parentIndex: 3
+    spriteID: b733ef5460088f5408b4e3cf2ef6cfba
+    layerID: -1407572020
+    mosaicPosition: {x: 158, y: 59}
+  - name: DewToeFL
+    spriteName: DewToeFL
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 7aa310148cbb2504592a5c09b7426911
+    layerID: 708012144
+    mosaicPosition: {x: 216, y: 17}
+  - name: LeftLeg
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 1382371321
+    mosaicPosition: {x: 0, y: 0}
+  - name: LeftCalf
+    spriteName: LeftCalf
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 449d14484eee4f24e8f23b14a91497b4
+    layerID: 1951511519
+    mosaicPosition: {x: 4, y: 83}
+  - name: LeftShin
+    spriteName: LeftShin
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 276d3c45a8a9a754da7d42ada52f964b
+    layerID: 446037039
+    mosaicPosition: {x: 235, y: 34}
+  - name: LeftFoot
+    spriteName: 
+    isGroup: 1
+    parentIndex: 8
+    spriteID: 
+    layerID: -1382169615
+    mosaicPosition: {x: 0, y: 0}
+  - name: FootBL
+    spriteName: FootBL
+    isGroup: 0
+    parentIndex: 11
+    spriteID: fbdb03c759582fd43bc14f6e50efadbd
+    layerID: 1374897640
+    mosaicPosition: {x: 226, y: 4}
+  - name: ToeBL
+    spriteName: ToeBL
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 614136a66eff0974085245f3935a3eaa
+    layerID: 654115360
+    mosaicPosition: {x: 144, y: 4}
+  - name: DewFootBL
+    spriteName: DewFootBL
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 6d381e192dbf2714d91e253770ca7703
+    layerID: 918026808
+    mosaicPosition: {x: 182, y: 17}
+  - name: DewToeBL
+    spriteName: DewToeBL
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 2fc3b16a88bc700499f3269362fa490c
+    layerID: 708012140
+    mosaicPosition: {x: 55, y: 120}
+  - name: Head
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: -158744160
+    mosaicPosition: {x: 0, y: 0}
+  - name: Jaw
+    spriteName: Jaw
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 484c5b5cf209c824ca32a4c2e290dc8f
+    layerID: 696030732
+    mosaicPosition: {x: 158, y: 34}
+  - name: Head
+    spriteName: Head
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 6af70041daad6264e937614c6fbb4e4d
+    layerID: 1334954620
+    mosaicPosition: {x: 55, y: 34}
+  - name: Neck
+    spriteName: Neck
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 1b68597b80ae5114bbc65dbf3a263b56
+    layerID: -2081058657
+    mosaicPosition: {x: 55, y: 83}
+  - name: Body
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: -911352830
+    mosaicPosition: {x: 0, y: 0}
+  - name: Chest
+    spriteName: Chest
+    isGroup: 0
+    parentIndex: 20
+    spriteID: 405834fa750893346a0ec118cd8ad76d
+    layerID: -696914899
+    mosaicPosition: {x: 4, y: 34}
+  - name: Torso
+    spriteName: Torso
+    isGroup: 0
+    parentIndex: 20
+    spriteID: a1718ac4fce6e3643a6cdcda098e1174
+    layerID: 82816617
+    mosaicPosition: {x: 111, y: 34}
+  - name: Tail
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 405905984
+    mosaicPosition: {x: 0, y: 0}
+  - name: Tail1
+    spriteName: Tail1
+    isGroup: 0
+    parentIndex: 23
+    spriteID: 15ae87fc8143e5c4b90ddd5610b368e6
+    layerID: 593506577
+    mosaicPosition: {x: 4, y: 4}
+  - name: RightArm
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 2040448702
+    mosaicPosition: {x: 0, y: 0}
+  - name: UpperArmFR
+    spriteName: UpperArmFR
+    isGroup: 0
+    parentIndex: 25
+    spriteID: adfd621ae9929b84f9623c58d927ecf5
+    layerID: -866144180
+    mosaicPosition: {x: 29, y: 133}
+  - name: LowerArmFR
+    spriteName: LowerArmFR
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 2688ed70507c0b54194a913d1287cd60
+    layerID: -607109587
+    mosaicPosition: {x: 4, y: 149}
+  - name: FootFR
+    spriteName: 
+    isGroup: 1
+    parentIndex: 25
+    spriteID: 
+    layerID: 568328582
+    mosaicPosition: {x: 0, y: 0}
+  - name: FootFR
+    spriteName: FootFR
+    isGroup: 0
+    parentIndex: 28
+    spriteID: 721542b7be36621429be590a90c20e6f
+    layerID: -441448538
+    mosaicPosition: {x: 206, y: 4}
+  - name: ToeFR
+    spriteName: ToeFR
+    isGroup: 0
+    parentIndex: 28
+    spriteID: d1a4a6e3ed1a2084dba3fd8dc86d57cb
+    layerID: -1671483486
+    mosaicPosition: {x: 185, y: 59}
+  - name: DewFootFR
+    spriteName: DewFootFR
+    isGroup: 0
+    parentIndex: 28
+    spriteID: 5e8d369baa601e54b86f81a0ba8409e6
+    layerID: -1407571990
+    mosaicPosition: {x: 144, y: 17}
+  - name: DewToeFR
+    spriteName: DewToeFR
+    isGroup: 0
+    parentIndex: 28
+    spriteID: b502cc5a6cf4d254db223910b53fd5c5
+    layerID: -1355464658
+    mosaicPosition: {x: 234, y: 17}
+  - name: RightLeg
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 97931404
+    mosaicPosition: {x: 0, y: 0}
+  - name: RightCalf
+    spriteName: RightCalf
+    isGroup: 0
+    parentIndex: 33
+    spriteID: 4ef3d16e89fe36b46a6c99b31f3503b4
+    layerID: -860752870
+    mosaicPosition: {x: 210, y: 34}
+  - name: RightShin
+    spriteName: RightShin
+    isGroup: 0
+    parentIndex: 33
+    spriteID: 471469396e8d0774eba3f5162d5c6efa
+    layerID: 1801131960
+    mosaicPosition: {x: 4, y: 203}
+  - name: RightFoot
+    spriteName: 
+    isGroup: 1
+    parentIndex: 33
+    spriteID: 
+    layerID: -2043754912
+    mosaicPosition: {x: 0, y: 0}
+  - name: FootBR
+    spriteName: FootBR
+    isGroup: 0
+    parentIndex: 36
+    spriteID: b25e3c46196926c479973b351d936532
+    layerID: 568328586
+    mosaicPosition: {x: 163, y: 17}
+  - name: ToeBR
+    spriteName: ToeBR
+    isGroup: 0
+    parentIndex: 36
+    spriteID: 41d2e3afbac935d48ab545ab3ca5ec08
+    layerID: 654115342
+    mosaicPosition: {x: 165, y: 4}
+  - name: DewFootBR
+    spriteName: DewFootBR
+    isGroup: 0
+    parentIndex: 36
+    spriteID: 0c252f1e74e873c488dda1283d68b3a7
+    layerID: 918026838
+    mosaicPosition: {x: 199, y: 17}
+  - name: DewToeBR
+    spriteName: DewToeBR
+    isGroup: 0
+    parentIndex: 36
+    spriteID: 8bbf49442480db14e8b01a02199697d3
+    layerID: -1355464662
+    mosaicPosition: {x: 55, y: 71}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Creature Texture
+  prefabAssetName: Creature Prefab
+  spriteLibAssetName: Creature Sprite Lib
+  secondarySpriteTextures: []
