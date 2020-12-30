@@ -32,7 +32,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -44,7 +44,7 @@ ScriptedImporter:
     textureShape: 1
     singleChannelComponent: 0
     ignorePngGamma: 0
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -749,7 +749,18 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -52, y: 34}
-  platformSettings: []
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
@@ -772,7 +783,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 0
     mosaicPosition: {x: 0, y: 0}
   - name: UpperArmFL
@@ -793,7 +804,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 1374897636
     mosaicPosition: {x: 0, y: 0}
   - name: FootFL
@@ -828,7 +839,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 1382371321
     mosaicPosition: {x: 0, y: 0}
   - name: LeftCalf
@@ -849,7 +860,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 8
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: -1382169615
     mosaicPosition: {x: 0, y: 0}
   - name: FootBL
@@ -884,7 +895,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: -158744160
     mosaicPosition: {x: 0, y: 0}
   - name: Jaw
@@ -912,7 +923,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: -911352830
     mosaicPosition: {x: 0, y: 0}
   - name: Chest
@@ -933,7 +944,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 405905984
     mosaicPosition: {x: 0, y: 0}
   - name: Tail1
@@ -947,7 +958,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 2040448702
     mosaicPosition: {x: 0, y: 0}
   - name: UpperArmFR
@@ -968,7 +979,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 25
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 568328582
     mosaicPosition: {x: 0, y: 0}
   - name: FootFR
@@ -1003,7 +1014,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 97931404
     mosaicPosition: {x: 0, y: 0}
   - name: RightCalf
@@ -1024,7 +1035,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 33
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: -2043754912
     mosaicPosition: {x: 0, y: 0}
   - name: FootBR
