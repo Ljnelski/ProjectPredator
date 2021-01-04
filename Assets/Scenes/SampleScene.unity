@@ -4035,7 +4035,7 @@ MonoBehaviour:
     m_Center: {x: 0, y: 0.00000047683716, z: 0}
     m_Extent: {x: 0.093750045, y: 0.039062522, z: 0}
   m_UseBatching: 1
-  m_AlwaysUpdate: 1
+  m_AlwaysUpdate: 0
 --- !u!212 &6930643494674755386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5049,6 +5049,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9150354415659174290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38636c11d789e50498abf13d84e1fce3, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f8abf6758b77f748b3c55d860027ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bones: []
