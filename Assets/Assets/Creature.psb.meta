@@ -109,7 +109,7 @@ ScriptedImporter:
     - name: LeftUpperArm_B
       position: {x: 8.966522, y: 33.341362, z: 0}
       rotation: {x: 0, y: 0, z: 0.7053931, w: -0.70881635}
-      length: 29.014606
+      length: 29.014599
       parentId: -1
     spriteOutline: []
     vertices:
@@ -174,14 +174,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: LeftLowerArm_B
-      position: {x: 6.106987, y: 42.327103, z: 0}
+      position: {x: 6.106987, y: 42.327118, z: 0}
       rotation: {x: 0, y: 0, z: -0.72679216, w: 0.6868575}
       length: 40.93587
       parentId: -1
     - name: FrontLeftFootCON_B
-      position: {x: 40.194252, y: 2.1035318, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99903935, w: 0.043822397}
-      length: 4.4400883
+      position: {x: 40.89161, y: 2.1429708, z: 0}
+      rotation: {x: 0, y: 0, z: -0.9990394, w: 0.04382244}
+      length: 4.440087
       parentId: 0
     spriteOutline: []
     vertices:
@@ -306,9 +306,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontLeftFoot_B
-      position: {x: 8.917603, y: 2.5393867, z: 0}
+      position: {x: 8.917587, y: 2.539402, z: 0}
       rotation: {x: 0, y: 0, z: -0.99999166, w: -0.0041043116}
-      length: 7.840425
+      length: 7.8404336
       parentId: -1
     spriteOutline: []
     vertices:
@@ -373,9 +373,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontLeftToe_B
-      position: {x: 12.077438, y: 2.6037445, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9953463, w: 0.096363}
-      length: 9.90995
+      position: {x: 12.077423, y: 2.6037598, z: 0}
+      rotation: {x: 0, y: 0, z: -0.9953463, w: 0.096363105}
+      length: 9.909951
       parentId: -1
     spriteOutline: []
     vertices:
@@ -440,9 +440,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontLeftDewFoot-B
-      position: {x: 2.4736023, y: 2.6159954, z: 0}
-      rotation: {x: 0, y: 0, z: 0.012129796, w: -0.9999265}
-      length: 7.5816236
+      position: {x: 2.4735718, y: 2.6160107, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0121299615, w: -0.9999265}
+      length: 7.581624
       parentId: -1
     spriteOutline: []
     vertices:
@@ -507,9 +507,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontLeftDewClaw_B
-      position: {x: 1.0529938, y: 2.4320831, z: 0}
-      rotation: {x: 0, y: 0, z: -0.093475446, w: 0.99562156}
-      length: 6.3258953
+      position: {x: 1.0529633, y: 2.4320984, z: 0}
+      rotation: {x: 0, y: 0, z: -0.09347556, w: 0.9956216}
+      length: 6.325896
       parentId: -1
     spriteOutline: []
     vertices:
@@ -575,8 +575,8 @@ ScriptedImporter:
     spriteBone:
     - name: LeftThigh_B
       position: {x: 8.358627, y: 28.84317, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7210745, w: 0.6928576}
-      length: 24.390827
+      rotation: {x: 0, y: 0, z: -0.72107446, w: 0.6928576}
+      length: 24.390835
       parentId: -1
     spriteOutline: []
     vertices:
@@ -641,14 +641,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: LeftShin_B
-      position: {x: 4.3855133, y: 37.471756, z: 0}
+      position: {x: 4.3855286, y: 37.471764, z: 0}
       rotation: {x: 0, y: 0, z: -0.68673044, w: 0.7269122}
       length: 35.140232
       parentId: -1
     - name: BackLefFootCON_B
-      position: {x: 36.371426, y: -2.0312138, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99993753, w: 0.011181854}
-      length: 3.6580303
+      position: {x: 36.371433, y: -2.0312138, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9997269, w: 0.023369364}
+      length: 4.205361
       parentId: 0
     spriteOutline: []
     vertices:
@@ -773,9 +773,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackLeftFoot_B
-      position: {x: 8.217438, y: 2.467865, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9997059, w: 0.024250802}
-      length: 6.4999423
+      position: {x: 8.217392, y: 2.4678726, z: 0}
+      rotation: {x: 0, y: 0, z: 0.999706, w: 0.024250422}
+      length: 6.4999385
       parentId: -1
     spriteOutline: []
     vertices:
@@ -840,9 +840,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackLeftToe_B
-      position: {x: 11.725143, y: 2.7830315, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99481285, w: -0.101722434}
-      length: 9.654609
+      position: {x: 11.725098, y: 2.7830353, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9948128, w: -0.101722814}
+      length: 9.654607
       parentId: -1
     spriteOutline: []
     vertices:
@@ -907,9 +907,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackLeftDewFoot_B
-      position: {x: 2.332367, y: 2.4767952, z: 0}
-      rotation: {x: 0, y: 0, z: 0.031499926, w: 0.99950373}
-      length: 5.864331
+      position: {x: 2.3323212, y: 2.4768028, z: 0}
+      rotation: {x: 0, y: 0, z: 0.03150031, w: 0.99950373}
+      length: 5.864328
       parentId: -1
     spriteOutline: []
     vertices:
@@ -974,9 +974,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackLeftDewClaw_B
-      position: {x: 1.1850586, y: 2.8460617, z: 0}
-      rotation: {x: 0, y: 0, z: -0.14576098, w: 0.98931986}
-      length: 5.4638147
+      position: {x: 1.1850281, y: 2.846077, z: 0}
+      rotation: {x: 0, y: 0, z: -0.14576057, w: 0.9893199}
+      length: 5.4638133
       parentId: -1
     spriteOutline: []
     vertices:
@@ -1041,7 +1041,7 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Jaw_B
-      position: {x: 40.05661, y: 6.9221954, z: 0}
+      position: {x: 40.056595, y: 6.9221954, z: 0}
       rotation: {x: 0, y: 0, z: -0.99989694, w: 0.014358715}
       length: 34.652775
       parentId: -1
@@ -1332,19 +1332,19 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Jaw_B
-      position: {x: 8.1686325, y: 16.380629, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0009207824, w: 0.9999996}
+      position: {x: 8.1686325, y: 16.380625, z: 0}
+      rotation: {x: 0, y: 0, z: -0.00092078163, w: 0.99999964}
       length: 34.652775
       parentId: 1
     - name: Head_B
-      position: {x: 14.367681, y: -0.000011413152, z: 0}
-      rotation: {x: 0, y: 0, z: -0.049926266, w: -0.9987529}
+      position: {x: 14.367684, y: -0.0000042175207, z: 0}
+      rotation: {x: 0, y: 0, z: -0.049926307, w: -0.9987529}
       length: 45.60881
       parentId: 2
     - name: Neck2_B
       position: {x: 62.054054, y: 20.549385, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9993992, w: 0.034660097}
-      length: 14.36766
+      rotation: {x: 0, y: 0, z: 0.9993992, w: 0.03466014}
+      length: 14.367663
       parentId: -1
     spriteOutline: []
     vertices:
@@ -1694,13 +1694,13 @@ ScriptedImporter:
       parentId: -1
     - name: Neck2_B
       position: {x: 15.333955, y: 0.0000045022625, z: 0}
-      rotation: {x: 0, y: 0, z: 0.023884667, w: 0.9997148}
-      length: 14.36766
+      rotation: {x: 0, y: 0, z: 0.023884626, w: 0.9997148}
+      length: 14.367663
       parentId: 0
     - name: Head_B
-      position: {x: 14.367633, y: -0.000011355288, z: 0}
-      rotation: {x: 0, y: 0, z: -0.049926266, w: -0.99875295}
-      length: 45.608807
+      position: {x: 14.367675, y: -0.000010224331, z: 0}
+      rotation: {x: 0, y: 0, z: -0.049926307, w: -0.99875295}
+      length: 45.60881
       parentId: 1
     spriteOutline: []
     vertices:
@@ -2162,25 +2162,25 @@ ScriptedImporter:
     - name: Tail4_B
       position: {x: 17.852745, y: 0.000008288709, z: 0}
       rotation: {x: 0, y: 0, z: -0.0040559503, w: 0.99999183}
-      length: 16.577074
+      length: 16.577059
       parentId: 2
     - name: Tail5_B
-      position: {x: 16.577063, y: -0.000004592848, z: 0}
+      position: {x: 16.577047, y: -0.0000052999826, z: 0}
       rotation: {x: 0, y: 0, z: 0.010164823, w: 0.9999483}
       length: 16.394154
       parentId: 3
     - name: Tail6_B
-      position: {x: 16.39415, y: -0.00000013562163, z: 0}
+      position: {x: 16.39415, y: -0.00000053275346, z: 0}
       rotation: {x: 0, y: 0, z: -0.006976204, w: 0.9999757}
-      length: 14.949492
+      length: 14.949508
       parentId: 4
     - name: Tail7_B
-      position: {x: 14.94949, y: 0.000007745896, z: 0}
+      position: {x: 14.949505, y: 0.000015369194, z: 0}
       rotation: {x: 0, y: 0, z: 0.001118827, w: 0.9999994}
       length: 13.581481
       parentId: 5
     - name: Tail8_B
-      position: {x: 13.581487, y: -0.0000018778073, z: 0}
+      position: {x: 13.581478, y: -0.0000037905888, z: 0}
       rotation: {x: 0, y: 0, z: -0.004178952, w: 0.99999136}
       length: 16.662386
       parentId: 6
@@ -2559,9 +2559,9 @@ ScriptedImporter:
       length: 40.23152
       parentId: -1
     - name: FrontRightFootCON_B
-      position: {x: 41.457996, y: 2.5395856, z: 0}
-      rotation: {x: 0, y: 0, z: -0.999392, w: 0.0348677}
-      length: 4.322057
+      position: {x: 40.71686, y: 2.543569, z: 0}
+      rotation: {x: 0, y: 0, z: -0.99953854, w: 0.030378656}
+      length: 4.265058
       parentId: 0
     spriteOutline: []
     vertices:
@@ -2686,8 +2686,8 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontRightFoot_B
-      position: {x: 9.466827, y: 2.8873043, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9999962, w: -0.002777873}
+      position: {x: 9.466919, y: 2.887289, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9999962, w: -0.0027777464}
       length: 7.9369507
       parentId: -1
     spriteOutline: []
@@ -2753,9 +2753,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontRightTow_B
-      position: {x: 12.529999, y: 2.8432083, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9929377, w: -0.118637696}
-      length: 10.480618
+      position: {x: 12.53009, y: 2.843193, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9929377, w: -0.11863762}
+      length: 10.4806185
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2820,9 +2820,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontRightDewFoot_B
-      position: {x: 2.405304, y: 2.799118, z: 0}
-      rotation: {x: 0, y: 0, z: -0.011832342, w: 0.9999301}
-      length: 7.4538774
+      position: {x: 2.4053802, y: 2.7991028, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0118331425, w: 0.99992996}
+      length: 7.453878
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2887,9 +2887,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: FrontRightDewToe_B
-      position: {x: 0.8570938, y: 2.6227417, z: 0}
-      rotation: {x: 0, y: 0, z: -0.15826906, w: 0.987396}
-      length: 7.1949396
+      position: {x: 0.8571701, y: 2.6227112, z: 0}
+      rotation: {x: 0, y: 0, z: -0.1582701, w: 0.98739594}
+      length: 7.1949387
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2955,8 +2955,8 @@ ScriptedImporter:
     spriteBone:
     - name: RightThigh_B
       position: {x: 8.0308075, y: 28.544945, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7095551, w: 0.70465}
-      length: 25.53861
+      rotation: {x: 0, y: 0, z: -0.70955527, w: 0.70464987}
+      length: 25.538599
       parentId: -1
     spriteOutline: []
     vertices:
@@ -3021,12 +3021,12 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: RightShin
-      position: {x: 4.8536377, y: 36.006958, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6952192, w: 0.7187979}
-      length: 33.429962
+      position: {x: 4.8536224, y: 36.006958, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6952192, w: 0.71879786}
+      length: 33.42996
       parentId: -1
     - name: BackRightFootCON_B
-      position: {x: 34.70339, y: -1.6646042, z: 0}
+      position: {x: 34.70338, y: -1.6646035, z: 0}
       rotation: {x: 0, y: 0, z: 0.999861, w: 0.016674642}
       length: 3.654667
       parentId: 0
@@ -3153,9 +3153,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackRightFoot_B
-      position: {x: 8.115448, y: 2.757328, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99975353, w: -0.022203349}
-      length: 5.6033177
+      position: {x: 8.115433, y: 2.7573318, z: 0}
+      rotation: {x: 0, y: 0, z: 0.99975353, w: -0.022203138}
+      length: 5.603317
       parentId: -1
     spriteOutline: []
     vertices:
@@ -3220,13 +3220,13 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackRightFoot_B
-      position: {x: 18.115448, y: 2.757328, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99975353, w: -0.022203349}
-      length: 5.6033177
+      position: {x: 18.115433, y: 2.7573318, z: 0}
+      rotation: {x: 0, y: 0, z: 0.99975353, w: -0.022203138}
+      length: 5.603317
       parentId: -1
     - name: BackRightToe_B
-      position: {x: 5.6033325, y: -0.000003588318, z: 0}
-      rotation: {x: 0, y: 0, z: 0.08123905, w: 0.9966946}
+      position: {x: 5.6033254, y: -0.000004878454, z: 0}
+      rotation: {x: 0, y: 0, z: 0.08123915, w: 0.9966946}
       length: 10.409175
       parentId: 0
     spriteOutline: []
@@ -3292,9 +3292,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackRightDewFoot_B
-      position: {x: 2.2719727, y: 2.6782303, z: 0}
-      rotation: {x: 0, y: 0, z: -0.011652404, w: 0.99993217}
-      length: 6.061889
+      position: {x: 2.2719574, y: 2.678234, z: 0}
+      rotation: {x: 0, y: 0, z: -0.011652701, w: 0.99993217}
+      length: 6.0618877
       parentId: -1
     spriteOutline: []
     vertices:
@@ -3359,13 +3359,13 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: BackRightDewFoot_B
-      position: {x: -4.7280273, y: 2.6782303, z: 0}
-      rotation: {x: 0, y: 0, z: -0.011652404, w: 0.99993217}
-      length: 6.061889
+      position: {x: -4.7280426, y: 2.678234, z: 0}
+      rotation: {x: 0, y: 0, z: -0.011652701, w: 0.99993217}
+      length: 6.0618877
       parentId: -1
     - name: BackRightDewClaw
-      position: {x: 6.061884, y: -0.000003835126, z: 0}
-      rotation: {x: 0, y: 0, z: -0.18818218, w: 0.9821341}
+      position: {x: 6.061903, y: 0.0000003839291, z: 0}
+      rotation: {x: 0, y: 0, z: -0.18818194, w: 0.9821342}
       length: 5.9121904
       parentId: 0
     spriteOutline: []
@@ -3433,7 +3433,7 @@ ScriptedImporter:
     - name: LeftUpperArm_B
       position: {x: 24.57419, y: 13.357597, z: 0}
       rotation: {x: 0, y: 0, z: 0.66460127, w: 0.7471982}
-      length: 29.014605
+      length: 29.014597
       parentId: 1
     - name: Chest_B
       position: {x: -3.9473217, y: 1.4044797, z: 0}
@@ -4106,12 +4106,12 @@ ScriptedImporter:
       parentId: 0
     - name: Neck2_B
       position: {x: 15.333947, y: -0.0000005206544, z: 0}
-      rotation: {x: 0, y: 0, z: 0.023884641, w: 0.99971473}
-      length: 14.367661
+      rotation: {x: 0, y: 0, z: 0.02388464, w: 0.99971473}
+      length: 14.367665
       parentId: 1
     - name: Head_B
-      position: {x: 14.367665, y: -0.000004870954, z: 0}
-      rotation: {x: 0, y: 0, z: -0.04992629, w: -0.9987529}
+      position: {x: 14.36767, y: -0.000004977127, z: 0}
+      rotation: {x: 0, y: 0, z: -0.049926292, w: -0.9987529}
       length: 45.60881
       parentId: 2
     - name: Jaw_B
@@ -4132,35 +4132,35 @@ ScriptedImporter:
     - name: LeftUpperArm_B
       position: {x: 24.574188, y: 13.357605, z: 0}
       rotation: {x: 0, y: 0, z: 0.66460127, w: 0.7471982}
-      length: 29.014605
+      length: 29.014597
       parentId: 0
     - name: LeftLowerArm_B
-      position: {x: 29.014599, y: -0.0000019961117, z: 0}
-      rotation: {x: 0, y: 0, z: 0.03065762, w: -0.99953}
+      position: {x: 29.014591, y: -0.0000019591755, z: 0}
+      rotation: {x: 0, y: 0, z: 0.030657567, w: -0.99953}
       length: 40.93587
       parentId: 7
     - name: FrontLeftFoot_B
-      position: {x: -2.4433799, y: 3.0981443, z: 0}
-      rotation: {x: 0, y: 0, z: 0.69304127, w: 0.7208979}
-      length: 7.8404274
+      position: {x: -1.7452472, y: 3.0763934, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6930412, w: 0.720898}
+      length: 7.8404355
       parentId: 13
     - name: FrontLeftToe_B
-      position: {x: 7.840432, y: -0.0000011842698, z: 0}
-      rotation: {x: 0, y: 0, z: 0.100447424, w: 0.9949424}
+      position: {x: 7.840434, y: 0.0000010922909, z: 0}
+      rotation: {x: 0, y: 0, z: 0.10044748, w: 0.99494237}
       length: 9.909952
       parentId: 9
     - name: FrontLeftDewFoot-B
-      position: {x: -2.540068, y: -2.4575346, z: 0}
-      rotation: {x: 0, y: -0, z: -0.72643685, w: 0.6872332}
+      position: {x: -1.8419358, y: -2.4792771, z: 0}
+      rotation: {x: 0, y: 0, z: -0.72643703, w: 0.6872331}
       length: 7.581623
       parentId: 13
     - name: FrontLeftDewClaw_B
-      position: {x: 7.58162, y: 0.00000026681485, z: 0}
-      rotation: {x: 0, y: 0, z: 0.08139189, w: -0.9966822}
+      position: {x: 7.581622, y: 0.0000008315421, z: 0}
+      rotation: {x: 0, y: 0, z: 0.081391826, w: -0.9966822}
       length: 6.325895
       parentId: 11
     - name: FrontLeftFootCON_B
-      position: {x: 40.194256, y: 2.1035237, z: 0}
+      position: {x: 40.891605, y: 2.1429589, z: 0}
       rotation: {x: 0, y: 0, z: -0.99903935, w: 0.043822397}
       length: 4.4400883
       parentId: 8
@@ -4175,13 +4175,13 @@ ScriptedImporter:
       length: 40.231514
       parentId: 14
     - name: FrontRightFootCON_B
-      position: {x: 41.45799, y: 2.5395749, z: 0}
-      rotation: {x: 0, y: -0, z: -0.999392, w: 0.03486769}
-      length: 4.3220563
+      position: {x: 40.71687, y: 2.5435588, z: 0}
+      rotation: {x: 0, y: -0, z: -0.9995385, w: 0.03037863}
+      length: 4.2650585
       parentId: 15
     - name: FrontRightFoot_B
-      position: {x: -0.74313855, y: 2.4849086, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7018374, w: 0.7123372}
+      position: {x: -1.5049582, y: 2.52704, z: 0}
+      rotation: {x: 0, y: 0, z: 0.70502967, w: 0.70917785}
       length: 7.9369483
       parentId: 16
     - name: FrontRightTow_B
@@ -4190,13 +4190,13 @@ ScriptedImporter:
       length: 10.480617
       parentId: 17
     - name: FrontRightDewFoot_B
-      position: {x: -0.9320691, y: -2.4507318, z: 0}
-      rotation: {x: 0, y: -0, z: -0.722515, w: 0.69135535}
-      length: 7.453873
+      position: {x: -1.6495448, y: -2.4100978, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7194031, w: 0.6945929}
+      length: 7.453874
       parentId: 16
     - name: FrontRightDewToe_B
-      position: {x: 7.4538736, y: 0.0000035575304, z: 0}
-      rotation: {x: 0, y: 0, z: -0.1465748, w: 0.9891996}
+      position: {x: 7.4538736, y: -0.00000091359925, z: 0}
+      rotation: {x: 0, y: 0, z: -0.14657502, w: 0.9891996}
       length: 7.1949363
       parentId: 19
     - name: Tail1_B
@@ -4217,71 +4217,71 @@ ScriptedImporter:
     - name: Tail4_B
       position: {x: 17.852741, y: 0.000012098618, z: 0}
       rotation: {x: 0, y: 0, z: -0.004055969, w: 0.9999918}
-      length: 16.577074
+      length: 16.577059
       parentId: 23
     - name: Tail5_B
-      position: {x: 16.577063, y: -0.000006196203, z: 0}
+      position: {x: 16.577047, y: -0.0000069033404, z: 0}
       rotation: {x: 0, y: 0, z: 0.010164875, w: 0.9999483}
       length: 16.39415
       parentId: 24
     - name: Tail6_B
-      position: {x: 16.394142, y: 0.0000016114454, z: 0}
+      position: {x: 16.394142, y: 0.0000012143122, z: 0}
       rotation: {x: 0, y: 0, z: -0.006976187, w: 0.9999757}
-      length: 14.9494915
+      length: 14.949507
       parentId: 25
     - name: Tail7_B
-      position: {x: 14.949496, y: 0.0000072162015, z: 0}
+      position: {x: 14.949512, y: 0.000014845596, z: 0}
       rotation: {x: 0, y: 0, z: 0.0011187932, w: 0.9999994}
       length: 13.581481
       parentId: 26
     - name: Tail8_B
-      position: {x: 13.5814705, y: -0.0000032647304, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0041789566, w: 0.99999136}
+      position: {x: 13.5814705, y: -0.0000032701641, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0041789156, w: 0.99999136}
       length: 16.662384
       parentId: 27
     - name: LeftThigh_B
       position: {x: 21.446024, y: -9.858095, z: 0}
-      rotation: {x: 0, y: 0, z: -0.72223264, w: 0.6916503}
-      length: 24.390825
+      rotation: {x: 0, y: -0, z: -0.7222326, w: 0.6916503}
+      length: 24.390831
       parentId: 6
     - name: LeftShin_B
-      position: {x: 24.390827, y: 0.0000128181755, z: 0}
-      rotation: {x: 0, y: 0, z: 0.04835144, w: 0.9988304}
+      position: {x: 24.390823, y: 0.000015530088, z: 0}
+      rotation: {x: 0, y: 0, z: 0.048351374, w: 0.99883044}
       length: 35.14023
       parentId: 29
     - name: BackLefFootCON_B
       position: {x: 36.37143, y: -2.031205, z: 0}
-      rotation: {x: 0, y: 0, z: 0.99993753, w: 0.011181851}
-      length: 3.6580298
+      rotation: {x: 0, y: -0, z: 0.9997269, w: 0.023369288}
+      length: 4.2053604
       parentId: 30
     - name: BackLeftFoot_B
-      position: {x: -1.4988371, y: 2.2591233, z: 0}
-      rotation: {x: 0, y: 0, z: 0.6771705, w: 0.73582613}
-      length: 6.4999394
+      position: {x: -1.5534595, y: 2.221986, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6860895, w: 0.7275172}
+      length: 6.499937
       parentId: 31
     - name: BackLeftToe_B
-      position: {x: 6.4999385, y: -0.00000012870453, z: 0}
-      rotation: {x: 0, y: 0, z: 0.12581751, w: 0.9920534}
+      position: {x: 6.499939, y: -0.0000020396683, z: 0}
+      rotation: {x: 0, y: 0, z: 0.12581754, w: 0.99205345}
       length: 9.654605
       parentId: 32
     - name: BackLeftDewFoot_B
-      position: {x: -1.6661824, y: -2.8530655, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6969443, w: 0.71712536}
-      length: 5.864328
+      position: {x: -1.5961394, y: -2.8927722, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6881512, w: 0.72556734}
+      length: 5.864327
       parentId: 31
     - name: BackLeftDewClaw_B
-      position: {x: 5.8643217, y: 0.0000009004233, z: 0}
-      rotation: {x: 0, y: 0, z: -0.17685217, w: 0.9842375}
+      position: {x: 5.8643365, y: 0.0000012165918, z: 0}
+      rotation: {x: 0, y: 0, z: -0.17685205, w: 0.9842375}
       length: 5.463812
       parentId: 34
     - name: RightThigh_B
       position: {x: 16.117235, y: -10.138493, z: 0}
-      rotation: {x: 0, y: 0, z: -0.710733, w: 0.70346195}
-      length: 25.538603
+      rotation: {x: 0, y: -0, z: -0.7107331, w: 0.70346177}
+      length: 25.538599
       parentId: 6
     - name: RightShin
-      position: {x: 25.538599, y: -0.0000006001505, z: 0}
-      rotation: {x: 0, y: 0, z: 0.020140555, w: 0.9997972}
+      position: {x: 25.538595, y: -0.000007734518, z: 0}
+      rotation: {x: 0, y: 0, z: 0.020140693, w: 0.99979717}
       length: 33.42996
       parentId: 36
     - name: BackRightFootCON_B
@@ -4291,22 +4291,22 @@ ScriptedImporter:
       parentId: 37
     - name: BackRightFoot_B
       position: {x: -1.5100355, y: 2.2315242, z: 0}
-      rotation: {x: 0, y: -0, z: 0.72263396, w: 0.6912309}
-      length: 5.6033177
+      rotation: {x: 0, y: -0, z: 0.72263384, w: 0.691231}
+      length: 5.603317
       parentId: 38
     - name: BackRightToe_B
-      position: {x: 5.6033173, y: -0.0000031185152, z: 0}
-      rotation: {x: 0, y: 0, z: 0.08123903, w: 0.9966947}
+      position: {x: 5.603316, y: -0.0000025669258, z: 0}
+      rotation: {x: 0, y: 0, z: 0.081239164, w: 0.9966947}
       length: 10.409175
       parentId: 39
     - name: BackRightDewFoot_B
       position: {x: -1.58911, y: -2.924997, z: 0}
-      rotation: {x: 0, y: -0, z: -0.7152969, w: 0.69882065}
-      length: 6.0618877
+      rotation: {x: 0, y: -0, z: -0.71529704, w: 0.69882053}
+      length: 6.0618863
       parentId: 38
     - name: BackRightDewClaw
-      position: {x: 6.061888, y: -0.0000031350396, z: 0}
-      rotation: {x: 0, y: 0, z: -0.18818216, w: 0.9821342}
+      position: {x: 6.061895, y: 0.00000044484753, z: 0}
+      rotation: {x: 0, y: 0, z: -0.18818197, w: 0.9821342}
       length: 5.91219
       parentId: 41
     parts:
