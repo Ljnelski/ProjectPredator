@@ -3757,7 +3757,7 @@ ScriptedImporter:
       y: 59
       width: 0
       height: 0
-    spriteID: 1e963d314a1a19e4d904e7c1420ac8b1
+    spriteID: 566a73f951288d248a73e8780a290b80
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -3782,7 +3782,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
+  documentAlignment: 0
   importHiddenLayers: 0
   importedTextureWidth: 256
   importedTextureHeight: 256
@@ -4089,7 +4089,7 @@ ScriptedImporter:
     spriteName: Rough
     isGroup: 0
     parentIndex: -1
-    spriteID: 1e963d314a1a19e4d904e7c1420ac8b1
+    spriteID: 566a73f951288d248a73e8780a290b80
     layerID: -1530319477
     mosaicPosition: {x: 245, y: 59}
   characterData:
