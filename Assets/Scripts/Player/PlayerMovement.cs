@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
+        anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
+        Debug.Log(anim);
     }
 
     // Update is called once per frame
