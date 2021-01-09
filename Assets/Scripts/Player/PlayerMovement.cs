@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // inspecter vars
-    [SerializeField] private float speed;
     // private vars
     private Rigidbody2D rbody;
     private Animator anim;
@@ -14,30 +12,18 @@ public class PlayerMovement : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody2D>();
         anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
-        Debug.Log(anim);
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
+    public void DoWalk(float input, float speed)
     {
-        float horiz = Input.GetAxis("Horizontal");
-
-        if (Mathf.Abs(horiz) > 0.01f)
-        {
-            rbody.velocity = new Vector2(speed * horiz, rbody.velocity.y);
-        }
-        ChangeDirection(false);
-    }
-    private void ChangeDirection(bool flip)
+        rbody.velocity = new Vector2(input * speed, rbody.velocity.y);
+    }    
+    private void OnDrawGizmos()
     {
-        if (flip)
-            transform.parent.localScale *= -1f;
-        else
-        {
-            if (rbody.velocity.x > 0.1f)
-                transform.parent.localScale = new Vector2(-1f, 1f);
-            else if (rbody.velocity.x < -0.1f)
-                transform.parent.localScale = new Vector2(1f, 1f);
-        }
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        mousePosition.Normalize();
+        //mousePosition = mousePosition.normalized;
+        //Debug.Log(mousePosition.magnitude);
+        Gizmos.DrawWireSphere(mousePosition + new Vector2(transform.position.x , transform.position.y), 1f);
+
     }
 }
