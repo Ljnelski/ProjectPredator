@@ -10,14 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float accelerationSpeed;
     [SerializeField] float groundingForce;
 
+    [Header("Animations")]
+    [SerializeField] float neckRotationSpeed;
+
     [Header("References")]
-    [SerializeField] LayerMask ground;
+    [SerializeField] LayerMask groundLayer;
 
-    // private vars
-    private Rigidbody2D rbody;
-    private Animator anim;
-
-
+    // private vars    
     private PlayerMovement playerMovement;
     private PlayerAnimation playerAnimation;
 
@@ -30,15 +29,11 @@ public class PlayerController : MonoBehaviour
     private bool movingForward; // FORWARD is Scale = (-1,1,1)
     private bool facingForward;  // BACKWARD is Scale = (1,1,1)
 
-
-
-    void Start()
+    void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
         playerAnimation = GetComponent<PlayerAnimation>();
-
-        rbody = GetComponent<Rigidbody2D>();
-        anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
+        //anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
     }
 
     // Update is called once per frame
@@ -74,30 +69,36 @@ public class PlayerController : MonoBehaviour
 
         if (isFocused)
         {
-            facingForward = playerAnimation.RotateHead(currentAxis, Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+            Vector2 targetRotation = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            facingForward = playerAnimation.VectorRightOfAxis(currentAxis, targetRotation);
+            playerAnimation.VectorToParameterRotation(currentAxis, targetRotation, neckRotationSpeed * Time.deltaTime, "Look");
             playerAnimation.ChangeDirection(!facingForward);
         }
         else
         {
             playerAnimation.ChangeDirection(!movingForward);
+            float rotationAmount = neckRotationSpeed * Time.deltaTime;
+
+            if (movingForward)
+            {
+                playerAnimation.VectorToParameterRotation(currentAxis, new Vector2(-currentAxis.y, currentAxis.x), rotationAmount, "Look");
+            }
+            else
+            {
+                playerAnimation.VectorToParameterRotation(currentAxis, new Vector2(currentAxis.y, -currentAxis.x), rotationAmount, "Look");
+            }            
         }
 
         if (facingForward)
         {
-            float dotProduct = currentAxis.x * -rbody.velocity.y / baseSpeed + currentAxis.y * rbody.velocity.x / baseSpeed;
+            float dotProduct = currentAxis.x * -playerMovement.GetVelocityY() / baseSpeed + currentAxis.y * playerMovement.GetVelocityX() / baseSpeed;
             playerAnimation.SetAnimatorFloat("Speed", dotProduct *-1);
         }
         else
         {
-            float dotProduct = currentAxis.x * -rbody.velocity.y / baseSpeed + currentAxis.y * rbody.velocity.x / baseSpeed;
+            float dotProduct = currentAxis.x * -playerMovement.GetVelocityY() / baseSpeed + currentAxis.y * playerMovement.GetVelocityX() / baseSpeed;
             playerAnimation.SetAnimatorFloat("Speed", dotProduct);
         }
-        
-       
-
-       
-
-
     }
     private void FixedUpdate()
     {
@@ -115,12 +116,12 @@ public class PlayerController : MonoBehaviour
             }
             if (movingForward)
             {
-                playerMovement.DoWalk(new Vector2(-currentAxis.y, currentAxis.x), currentSpeed);
+                playerMovement.SetVelocity(new Vector2(-currentAxis.y, currentAxis.x), currentSpeed);
                 facingForward = true;
             }
             else
             {
-                playerMovement.DoWalk(new Vector2(currentAxis.y, -currentAxis.x), currentSpeed);
+                playerMovement.SetVelocity(new Vector2(currentAxis.y, -currentAxis.x), currentSpeed);
                 facingForward = false;
             }
         }
@@ -128,26 +129,31 @@ public class PlayerController : MonoBehaviour
         {
             currentSpeed = Mathf.Lerp(currentSpeed, 0f, accelerationSpeed * Time.deltaTime);
         }
-        rbody.AddForce(-groundingForce * currentAxis);
+        playerMovement.AddForce( currentAxis, -groundingForce);
     }
     private Vector2 GetUpAxis()
     {
         float angle = transform.rotation.eulerAngles.z - 90;
-        Vector3 down = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0f);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, down, 2f, ground);
+        Vector3 angleDown = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0f);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, angleDown, 2f, groundLayer);
         Vector2 newAxis = hit.normal;
         newAxis.Normalize();
+
         return newAxis;
     }
     private void OnDrawGizmos()
     {
+        Vector2 playerPosition = transform.position;
+
+        Vector2 groundForce = -GetUpAxis();
         Gizmos.color = Color.green;
+        Gizmos.DrawRay(playerPosition, groundForce);
 
-        float angle = transform.rotation.eulerAngles.z - 90;
+        Gizmos.color = Color.red;
+        Vector2 cornerDetectorPos = playerPosition - new Vector2(-currentAxis.y, currentAxis.x) + groundForce;
+        Gizmos.DrawRay(cornerDetectorPos, -new Vector2(currentAxis.y, -currentAxis.x));
 
-        Vector2 down = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
-        Vector2 newTransform = transform.position;
-        Debug.Log(down);
-        Gizmos.DrawRay(newTransform + rbody.centerOfMass, rbody.centerOfMass + down);
+        
     }
 }

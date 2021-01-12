@@ -6,23 +6,39 @@ public class PlayerMovement : MonoBehaviour
 {
     // private vars
     private Rigidbody2D rbody;
-    private Animator anim;
 
     // gizmos vars
-    Vector3 walkDirection;
+    private Vector3 walkDirection;
     void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
-        anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
     }
-    public void DoWalk(Vector2 forward, float speed)
+
+    public Vector2 GetVelocity()
+    {
+        return rbody.velocity;
+    }
+    public float GetVelocityX()
+    {
+        return rbody.velocity.x;
+    }
+    public float GetVelocityY()
+    {
+        return rbody.velocity.y;
+    }
+
+    public void SetVelocity(Vector2 forward, float speed)
     {
         Vector2 direction;
-        direction = new Vector2(speed * forward.x, speed * forward.y);       
+        direction = new Vector2(speed * forward.x, speed * forward.y);
 
         rbody.velocity = direction;
-       
-        walkDirection = direction.normalized;        
+
+        walkDirection = direction.normalized;
+    }
+    public void AddForce(Vector2 direction, float force)
+    {
+        rbody.AddForce(direction * force);
     }    
     private void OnDrawGizmos()
     {
