@@ -16,43 +16,41 @@ public class PlayerAnimation : MonoBehaviour
         anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
         rbody = GetComponent<Rigidbody2D>();
     }
-    public void SetWalkCycleSpeed(/*Pass speed value as method*/)
+    public void SetAnimatorFloat(string parameterName, float value)
     {
-        anim.SetFloat("Speed", rbody.velocity.magnitude);
+        anim.SetFloat(parameterName, value);
     }
-    public void RotateHead()
+    public bool RotateHead(Vector2 newAxis, Vector2 target)
     {
-        Vector2 mouseDirFromCharacter = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        mouseDirFromCharacter.Normalize();
-
-        // Get the angle of the ground
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 2f, ground);
-        Vector2 newAxis = hit.normal;
+       
+        target.Normalize();
+       
         newAxis.Normalize();
 
-        float dotProduct = newAxis.x * -mouseDirFromCharacter.y + newAxis.y * mouseDirFromCharacter.x;
-        float dotProduct1 = newAxis.x * mouseDirFromCharacter.x + newAxis.y * mouseDirFromCharacter.y;
+        
+        float dotProduct = newAxis.x * -target.y + newAxis.y * target.x;
+        float dotProduct1 = Vector2.Dot(newAxis, target);  
+   
+        float look = Mathf.Lerp(dotProduct1, anim.GetFloat("Look"), 0.1f);
+        anim.SetFloat("Look", look);
+
 
         if (dotProduct > 0f)
         {
-            transform.localScale = new Vector2(-1f, 1f);
+            return false;
         }
-        else if (dotProduct < 0f)
+        else 
         {
-            transform.localScale = new Vector2(1f, 1f);
-        }
-
-        float look = Mathf.Lerp(dotProduct1, anim.GetFloat("Look"), 0.1f);
-        anim.SetFloat("Look", look);
+            return true;
+        }        
     }
-    private void ChangeDirection(bool scaleNegative)
+    public void ChangeDirection(bool isForward)
     {
-        if (scaleNegative)
+        if (isForward)
             transform.localScale = new Vector2(-1f, 1f);
-        else if (!scaleNegative)
+        else
             transform.localScale = new Vector2(1f, 1f);
-
     }
-    }
-    /* Note for the walk animation to make sure the feet don't slide the formula is (0.3 * Speed) */
 }
+    /* Note for the walk animation to make sure the feet don't slide the formula is (0.3 * Speed) */
+
