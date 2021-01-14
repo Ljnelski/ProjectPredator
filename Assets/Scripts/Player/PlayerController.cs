@@ -4,42 +4,54 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // private inspector vars
-    [SerializeField] float baseSpeed;
-    [SerializeField] float focusSpeed;
-    [SerializeField] float accelerationSpeed;
-    [SerializeField] float groundingForce;
+    //inspector vars
+    public float baseSpeed;
+    public float focusSpeed;
+    public float accelerationSpeed;
+    public float groundingForce;
 
     [Header("Animations")]
-    [SerializeField] float neckRotationSpeed;
+    public float neckRotationSpeed;
 
     [Header("References")]
-    [SerializeField] LayerMask groundLayer;
+    public LayerMask groundLayer;
 
-    // private vars    
-    private PlayerMovement playerMovement;
-    private PlayerAnimation playerAnimation;
+    // private vars
+    public State currentState;
+    public State idleState = new IdleState();
+    public State focusedState = new FocusedState();
+    public State walkingState = new WalkingState();
+    public State focusedWalkingState = new FocusedWalkingState();
+    
 
-    private Vector2 currentAxis;
+    public PlayerMovement playerMovement;
+    public PlayerAnimation playerAnimation;
 
-    private float currentSpeed;
+    public Vector2 currentAxis;
 
-    private bool isFocused;
-    private bool isMoving;
-    private bool movingForward; // FORWARD is Scale = (-1,1,1)
-    private bool facingForward;  // BACKWARD is Scale = (1,1,1)
+    public float currentSpeed;
+
+    public bool isFocused;
+    public bool isMoving;
+    public bool movingForward; // FORWARD is Scale = (-1,1,1)
+    public bool facingForward;  // BACKWARD is Scale = (1,1,1)
 
     void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
         playerAnimation = GetComponent<PlayerAnimation>();
-        //anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
+
+        currentState = idleState;
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         if (Input.GetMouseButton(0))
+        {
+            isFocused = true;
+        }
+        else if(Input.GetMouseButton(1))
         {
             isFocused = true;
         }
@@ -66,70 +78,13 @@ public class PlayerController : MonoBehaviour
         {
             isMoving = false;
         }
-
-        if (isFocused)
-        {
-            Vector2 targetRotation = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            facingForward = playerAnimation.VectorRightOfAxis(currentAxis, targetRotation);
-            playerAnimation.VectorToParameterRotation(currentAxis, targetRotation, neckRotationSpeed * Time.deltaTime, "Look");
-            playerAnimation.ChangeDirection(!facingForward);
-        }
-        else
-        {
-            playerAnimation.ChangeDirection(!movingForward);
-            float rotationAmount = neckRotationSpeed * Time.deltaTime;
-
-            if (movingForward)
-            {
-                playerAnimation.VectorToParameterRotation(currentAxis, new Vector2(-currentAxis.y, currentAxis.x), rotationAmount, "Look");
-            }
-            else
-            {
-                playerAnimation.VectorToParameterRotation(currentAxis, new Vector2(currentAxis.y, -currentAxis.x), rotationAmount, "Look");
-            }            
-        }
-
-        if (facingForward)
-        {
-            float dotProduct = currentAxis.x * -playerMovement.GetVelocityY() / baseSpeed + currentAxis.y * playerMovement.GetVelocityX() / baseSpeed;
-            playerAnimation.SetAnimatorFloat("Speed", dotProduct *-1);
-        }
-        else
-        {
-            float dotProduct = currentAxis.x * -playerMovement.GetVelocityY() / baseSpeed + currentAxis.y * playerMovement.GetVelocityX() / baseSpeed;
-            playerAnimation.SetAnimatorFloat("Speed", dotProduct);
-        }
+        currentState = currentState.ExecuteState(this);
+        Debug.Log(currentState);
     }
     private void FixedUpdate()
     {
         currentAxis = GetUpAxis();
-
-        if (isMoving)
-        {
-            if (isFocused)
-            {
-                currentSpeed = Mathf.Lerp(currentSpeed, focusSpeed, accelerationSpeed * Time.deltaTime);
-            }
-            else
-            {
-                currentSpeed = Mathf.Lerp(currentSpeed, baseSpeed, accelerationSpeed * Time.deltaTime);
-            }
-            if (movingForward)
-            {
-                playerMovement.SetVelocity(new Vector2(-currentAxis.y, currentAxis.x), currentSpeed);
-                facingForward = true;
-            }
-            else
-            {
-                playerMovement.SetVelocity(new Vector2(currentAxis.y, -currentAxis.x), currentSpeed);
-                facingForward = false;
-            }
-        }
-        else 
-        {
-            currentSpeed = Mathf.Lerp(currentSpeed, 0f, accelerationSpeed * Time.deltaTime);
-        }
-        playerMovement.AddForce( currentAxis, -groundingForce);
+        currentState.ExecuteStatePhysics(this);
     }
     private Vector2 GetUpAxis()
     {
