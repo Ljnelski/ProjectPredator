@@ -1,31 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerAnimation : MonoBehaviour
+﻿using UnityEngine;
+public class PlayerAnimation
 {
-    // private inspecter var
-    [SerializeField] private LayerMask ground;
-    // private vars
-    private Animator anim;
-    
-    // Start is called before the first frame update
-    void Awake()
-    {        
-        anim = transform.GetChild(0).GetComponent<Animator>(); // This is to grab the animator from the Creature
-    }
-    public void SetAnimatorFloat(string parameterName, float value)
+    public Animator anim;
+    public PlayerAnimation(Animator anim)
     {
-        anim.SetFloat(parameterName, value);
+        this.anim = anim;
     }
-    public void VectorToParameterRotation(Vector2 axis, Vector2 target, float rotSpeed, string parameter)
-    {       
-        target.Normalize();       
-        axis.Normalize();        
-       
-        float dotProduct1 = Vector2.Dot(axis, target);  
-        float look = Mathf.Lerp(anim.GetFloat(parameter), dotProduct1, rotSpeed);
-        anim.SetFloat(parameter, look);       
+    public float VectorToParameterRotation(Vector2 axis, Vector2 target, float rotSpeed, string parameter)
+    {
+        target.Normalize();
+        axis.Normalize();
+
+        float dotProduct = Vector2.Dot(axis, target);
+        float value = Mathf.Lerp(anim.GetFloat(parameter), dotProduct, rotSpeed);
+        return value;
     }
     public bool VectorRightOfAxis(Vector2 axis, Vector2 target)
     {
@@ -40,13 +28,8 @@ public class PlayerAnimation : MonoBehaviour
             return true;
         }
     }
-    public void ChangeDirection(bool isForward)
+    public void SetFloat(string name, float value)
     {
-        if (isForward)
-            transform.localScale = new Vector2(-1f, 1f);
-        else
-            transform.localScale = new Vector2(1f, 1f);
+        anim.SetFloat(name, value);
     }
 }
-    /* Note for the walk animation to make sure the feet don't slide the formula is (0.3 * Speed) */
-

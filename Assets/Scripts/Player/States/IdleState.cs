@@ -1,42 +1,45 @@
 ﻿using System;
 using UnityEngine;
+
 public class IdleState : State
 {
-    public override State ExecuteState(PlayerController player)
+    private float deceleration;
+    private float maxSpeed;
+    public IdleState(StateMachine stateMachine) : base(stateMachine)
     {
-        #region HeadRotation
-        player.playerAnimation.ChangeDirection(!player.movingForward);
-        float rotationAmount = player.neckRotationSpeed * Time.deltaTime;
-
-        if (player.movingForward)
-            player.playerAnimation.VectorToParameterRotation(player.currentAxis, new Vector2(-player.currentAxis.y, player.currentAxis.x), rotationAmount, "Look");
-        else
-            player.playerAnimation.VectorToParameterRotation(player.currentAxis, new Vector2(player.currentAxis.y, -player.currentAxis.x), rotationAmount, "Look");
-        #endregion
-
-        #region SetWalkAnimationSpeed
-        if (player.facingForward)
-        {
-            float dotProduct = player.currentAxis.x * -player.playerMovement.GetVelocityY() / player.baseSpeed + player.currentAxis.y * player.playerMovement.GetVelocityX() / player.baseSpeed;
-            player.playerAnimation.SetAnimatorFloat("Speed", dotProduct * -1);
-        }
-        else
-        {
-            float dotProduct = player.currentAxis.x * -player.playerMovement.GetVelocityY() / player.baseSpeed + player.currentAxis.y * player.playerMovement.GetVelocityX() / player.baseSpeed;
-            player.playerAnimation.SetAnimatorFloat("Speed", dotProduct);
-        }
-        #endregion
-
-        if (player.isMoving)
-            return player.walkingState;
-        else if (player.isFocused)
-            return player.focusedState;
-        else
-            return player.idleState;
+        ;
     }
-    public override void ExecuteStatePhysics(PlayerController player)
+    public override void EnterState()
     {
-        player.currentSpeed = Mathf.Lerp(player.currentSpeed, 0f, player.accelerationSpeed);
-        player.playerMovement.AddForce(player.currentAxis, -player.groundingForce);
+        deceleration = MasterMachine.Data.accelerationSpeed;
+        maxSpeed = MasterMachine.Data.walkingSpeed;
+    }
+
+    public override void ExitState()
+    {
+        
+    }
+
+    public override void LogicUpdate()
+    {
+        MasterMachine.Animator.SetFloat("Speed", MasterMachine.Physics.GetClampedVelocity(maxSpeed));
+
+        float rotation;
+        if (MasterMachine.Data.FacingForward)
+            rotation = MasterMachine.Animator.VectorToParameterRotation(MasterMachine.Data.CurrentAxis, new Vector2(-1, 0f), MasterMachine.Data.neckRotationSpeed, "Look");
+       else
+            rotation = MasterMachine.Animator.VectorToParameterRotation(MasterMachine.Data.CurrentAxis, new Vector2(1, 0f), MasterMachine.Data.neckRotationSpeed, "Look");
+
+        MasterMachine.Animator.SetFloat("Look", rotation);
+
+
+        if (MasterMachine.Data.IsMoving)
+            MasterMachine.ChangeState(MasterMachine.walkingState);
+    }
+
+    public override void PhysicsUpdate()
+    {        
+        MasterMachine.Physics.SetVelocity(MasterMachine.Data.CurrentAxis, 0f, deceleration, MasterMachine.Data.MovingForward);
+        MasterMachine.Physics.ApplyForce(-MasterMachine.Data.CurrentAxis, MasterMachine.Data.groundingForce);
     }
 }

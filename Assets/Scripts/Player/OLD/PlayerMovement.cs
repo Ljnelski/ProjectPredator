@@ -36,22 +36,27 @@ public class PlayerMovement : MonoBehaviour
 
         walkDirection = direction.normalized;
     }
+    
+    public void SetGravityScale(float scale)
+    {
+        rbody.gravityScale = scale;
+    }
     public void AddForce(Vector2 direction, float force)
     {
         rbody.AddForce(direction * force);
     }    
     private void OnDrawGizmos()
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        mousePosition.Normalize();
-        //mousePosition = mousePosition.normalized;
-        //Debug.Log(mousePosition.magnitude);
-        Gizmos.DrawWireSphere(mousePosition + new Vector2(transform.position.x , transform.position.y), 1f);
+        //Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        //mousePosition.Normalize();
+        ////mousePosition = mousePosition.normalized;
+        ////Debug.Log(mousePosition.magnitude);
+        //Gizmos.DrawWireSphere(mousePosition + new Vector2(transform.position.x , transform.position.y), 1f);
 
         
 
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawRay(transform.position, walkDirection);
+        //Gizmos.color = Color.magenta;
+        //Gizmos.DrawRay(transform.position, walkDirection);
 
     }
 }
